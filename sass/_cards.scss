@@ -1,6 +1,8 @@
 .cartes {
-    margin-top: 30px;
+    margin-top: 20px;
+    padding-top: 20px;
     text-align: center;
+    background-color: #F6F6F6;
 }
 .cartes__list {
     display: flex;
@@ -14,15 +16,15 @@
     border: 1px solid #eee;
     margin: 10px;
     border-radius: 5px;
-    overflow: hidden;
     position: relative;
+    border-radius: 20px;
 }
 .card__body,
 .carte_body {
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: left;
 }
 .card__title,
 .carte__title {
@@ -34,27 +36,29 @@
 }
 .card__location,
 .carte_ville {
-    color: $secondary-color;
+    font-size: 17px;
 }
-.card__like,
-.btn-like {
-    background-color: $primary-color;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 20px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
+
 .card__status,
 .carte__status {
     background-color: $primary-color;
     color: #fff;
     padding: 5px 10px;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: 10px; /* Inversé : placer en haut */
+    right: 10px; /* Inversé : placer à droite */
+}
+
+.card__like,
+.btn-like {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    bottom: 25px; /* Inversé : placer en bas */
+    right: 15px; /* Inversé : placer à droite */
 }
