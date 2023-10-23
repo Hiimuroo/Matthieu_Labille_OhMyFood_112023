@@ -1,3 +1,172 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
 
-/*# sourceMappingURL=style.css.map */
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+.footer li {
+  list-style: none;
+}
+
+.header {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+.restaurant_address {
+  display: block;
+  margin-top: 10px;
+  background-color: #EAEAEA;
+}
+
+.tutoriel {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tutoriel_list {
+  list-style: none;
+  padding: 0;
+}
+
+.tutoriel_list_item {
+  margin: 10px 0;
+  text-align: left;
+  max-width: 400px;
+}
+
+.step__icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.cartes {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.cartes__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card,
+.carte {
+  width: 80%;
+  background-color: #fff;
+  border: 1px solid #eee;
+  margin: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card__body,
+.carte_body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__title,
+.carte__title {
+  font-size: 18px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+}
+
+.card__location,
+.carte_ville {
+  color: #FF79DA;
+}
+
+.card__like,
+.btn-like {
+  background-color: #9356DC;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.card__status,
+.carte__status {
+  background-color: #9356DC;
+  color: #fff;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #9356DC;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.contenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.homepage_menu {
+  margin-top: 30px;
+}
+
+.homepage_menu {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card__image,
+.carte__img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */
