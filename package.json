@@ -1,0 +1,19 @@
+{
+  "name": "projet-4",
+  "version": "1.0.0",
+  "description": "Projet 4 OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hiimuroo/Projet-OhMyFood.git"
+  },
+  "author": "Matthieu Labille",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hiimuroo/Projet-OhMyFood/issues"
+  },
+  "homepage": "https://github.com/Hiimuroo/Projet-OhMyFood#readme"
+}
