@@ -1,6 +1,7 @@
 .cartes {
-    margin-top: 20px;
+    margin-top: 10px;
     padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     background-color: #F6F6F6;
 }
@@ -29,7 +30,7 @@
 .card__title,
 .carte__title {
     font-size: 18px;
-    margin: 10px 0;
+    margin: 5px 0;
     text-decoration: none;
     color: #333;
     font-weight: 700;
@@ -45,8 +46,8 @@
     color: #fff;
     padding: 5px 10px;
     position: absolute;
-    top: 10px; /* Inversé : placer en haut */
-    right: 10px; /* Inversé : placer à droite */
+    top: 10px;
+    right: 10px; 
 }
 
 .card__like,
@@ -59,6 +60,6 @@
     cursor: pointer;
     font-size: 20px;
     position: absolute;
-    bottom: 25px; /* Inversé : placer en bas */
-    right: 15px; /* Inversé : placer à droite */
+    bottom: 25px;
+    right: 15px; 
 }
