@@ -3,7 +3,8 @@ $font-logo: 'Shrikhand', italic;
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $Tertiaire-color: #99E2D0;
-$button-gradien: 193deg, #9356DC -11.44%, #FF79DA 123.93%;
+$button-gradient: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
+$button-gradient-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
 $footer-color: #353535;
 
 body {

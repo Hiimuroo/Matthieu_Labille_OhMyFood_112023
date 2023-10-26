@@ -34,8 +34,8 @@
 .step {
     background-color: #9356DC;
     color: #fff;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -50,10 +50,11 @@
     display: flex;
     align-items: center;
     margin-left: 10px; 
+    font-weight: bold;
 }
 
 .step__icon {
-    font-size: 24px;
+    font-size: 20px;
     margin-right: 30px; 
 }
 
@@ -61,8 +62,17 @@
     display: inline-block;
     background-color: #F6F6F6;
     color: #000;
-    padding: 20px 30px;
+    padding: 25px 35px;
     margin: 20px;
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tutoriel_list_item:first-child .step__icon,
+.tutoriel_list_item:nth-child(2) .step__icon {
+    color: #7E7E7E;
+}
+
+.tutoriel_list_item:last-child .step__icon {
+    color: #9356DC;
 }
