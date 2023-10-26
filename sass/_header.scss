@@ -8,10 +8,15 @@
 .header h1 {
   font-family: $font-logo;
 }
+
 .restaurant_address {
   display: block; 
   width: 100%; 
   text-align: center;
   background-color: #EAEAEA;
   padding: 10px 0;
+}
+
+.no-outline {
+  outline: none;
 }

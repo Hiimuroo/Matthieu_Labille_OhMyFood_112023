@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", normal;
   margin: 0;
   padding: 0;
 }
@@ -24,15 +24,27 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
 .footer li {
   list-style: none;
+  margin-left: 10px;
+  padding: 8px;
 }
 
 .footer_titre {
   font-size: 20px;
-  font-family: "Shrikhand", italic;
+  font-family: "Shrikhand", normal;
+  margin-left: 10px;
+}
+
+.footer_liste {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
 .header {
@@ -44,7 +56,7 @@ footer {
 }
 
 .header h1 {
-  font-family: "Shrikhand", italic;
+  font-family: "Shrikhand", normal;
 }
 
 .restaurant_address {
@@ -55,16 +67,21 @@ footer {
   padding: 10px 0;
 }
 
+.no-outline {
+  outline: none;
+}
+
 .tutoriel {
   margin-top: 30px;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  text-align: center;
 }
 
 .tutoriel h2 {
   text-align: left;
+  margin-left: 20px;
 }
 
 .tutoriel_list {
@@ -142,6 +159,11 @@ footer {
   background-color: #F6F6F6;
 }
 
+.cartes h2 {
+  text-align: left;
+  margin-left: 20px;
+}
+
 .cartes__list {
   display: flex;
   flex-direction: column;
@@ -184,6 +206,8 @@ footer {
   position: absolute;
   top: 10px;
   right: 10px;
+  font-size: 14px;
+  color: #008766;
 }
 
 .btn-like {
@@ -206,7 +230,7 @@ footer {
   padding: 16px 20px;
   text-decoration: none;
   border-radius: 25px;
-  margin-top: 20px;
+  margin: 20px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   transition: all 0.3s;
 }
