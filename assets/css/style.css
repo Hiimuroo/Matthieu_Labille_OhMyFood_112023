@@ -77,6 +77,36 @@ footer {
   margin: 40px 0;
   text-align: left;
   max-width: 400px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.step-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.step {
+  background-color: #9356DC;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-right: 5px;
+  position: absolute;
+  left: -15px;
+}
+
+.step-content {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
 }
 
 .step__icon {
@@ -84,15 +114,14 @@ footer {
   margin-right: 30px;
 }
 
-.tutoriel_list_item {
+.tutoriel_list_item:not(.step-container) {
   display: inline-block;
-  background-color: #F6F6F6; /* Couleur grise */
-  color: #000; /* Couleur du texte */
-  padding: 15px 25px;
+  background-color: #F6F6F6;
+  color: #000;
+  padding: 20px 30px;
   margin: 20px;
   border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  cursor: not-allowed;
 }
 
 .cartes {
@@ -114,24 +143,24 @@ footer {
   width: 80%;
   background-color: #fff;
   border: 1px solid #eee;
-  margin: 10px;
-  border-radius: 5px;
-  position: relative;
+  margin: 10px 0;
   border-radius: 20px;
+  position: relative;
 }
 
 .card__body,
 .carte_body {
-  padding: 5px;
+  padding: 5px 10px;
   display: flex;
   flex-direction: column;
   text-align: left;
+  margin-bottom: 5px;
 }
 
 .card__title,
 .carte__title {
   font-size: 18px;
-  margin: 5px 0;
+  margin: 5px 10px;
   text-decoration: none;
   color: #333;
   font-weight: 700;
@@ -140,12 +169,12 @@ footer {
 .card__location,
 .carte_ville {
   font-size: 17px;
+  margin: 5px 10px;
 }
 
 .card__status,
 .carte__status {
-  background-color: #9356DC;
-  color: #fff;
+  background-color: #99E2D0;
   padding: 5px 10px;
   position: absolute;
   top: 10px;
@@ -162,19 +191,25 @@ footer {
   cursor: pointer;
   font-size: 20px;
   position: absolute;
-  bottom: 25px;
+  bottom: 20px;
   right: 15px;
 }
 
 .btn {
   display: inline-block;
-  background-color: #9356DC;
+  background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
   color: #fff;
-  padding: 10px 20px;
+  padding: 16px 20px;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 25px;
   margin-top: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+}
+.btn:hover {
+  border-radius: 25px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
 .homepage_menu {
@@ -183,7 +218,7 @@ footer {
   align-items: center;
   text-align: center;
   background-color: #F6F6F6;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 .card__image,
