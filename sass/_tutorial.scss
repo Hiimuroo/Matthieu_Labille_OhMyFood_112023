@@ -32,7 +32,7 @@
 }
 
 .step {
-    background-color: #9356DC;
+    background-color: $primary-color;
     color: #fff;
     width: 25px;
     height: 25px;
@@ -74,5 +74,5 @@
 }
 
 .tutoriel_list_item:last-child .step__icon {
-    color: #9356DC;
+    color: $primary-color;
 }

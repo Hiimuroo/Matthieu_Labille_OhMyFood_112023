@@ -148,8 +148,7 @@ footer {
   align-items: center;
 }
 
-.card,
-.carte {
+.card {
   width: 80%;
   background-color: #fff;
   border: 1px solid #eee;
@@ -158,8 +157,7 @@ footer {
   position: relative;
 }
 
-.card__body,
-.carte_body {
+.card__body {
   padding: 5px 10px;
   display: flex;
   flex-direction: column;
@@ -167,8 +165,7 @@ footer {
   margin-bottom: 5px;
 }
 
-.card__title,
-.carte__title {
+.card__title {
   font-size: 18px;
   margin: 5px 10px;
   text-decoration: none;
@@ -176,14 +173,12 @@ footer {
   font-weight: 700;
 }
 
-.card__location,
-.carte_ville {
+.card__location {
   font-size: 17px;
   margin: 5px 10px;
 }
 
-.card__status,
-.carte__status {
+.card__status {
   background-color: #99E2D0;
   padding: 5px 10px;
   position: absolute;
@@ -191,7 +186,6 @@ footer {
   right: 10px;
 }
 
-.card__like,
 .btn-like {
   background-color: white;
   color: black;
