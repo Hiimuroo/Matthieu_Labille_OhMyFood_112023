@@ -16,13 +16,11 @@
   }
 }
 
-
-/* Cacher la checkbox */
 .like-checkbox {
   display: none;
 }
 
-/* Style pour le label */
+
 .btn-like {
   position: absolute;
   bottom: 20px;
@@ -39,17 +37,14 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* Lorsque la checkbox est cochée, montrer l'icône de cœur plein pour la première carte */
 #heart1:checked + .btn-like .filled-heart {
   display: inline;
 }
 
-/* Cacher l'icône de cœur vide lorsqu'une checkbox est cochée pour la première carte */
 #heart1:checked + .btn-like .empty-heart {
   display: none;
 }
 
-/* Répéter les mêmes règles en changeant les identifiants pour chaque carte */
 #heart2:checked + .btn-like .filled-heart {
   display: inline;
 }
