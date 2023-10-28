@@ -15,3 +15,62 @@
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
   }
 }
+
+
+/* Cacher la checkbox */
+.like-checkbox {
+  display: none;
+}
+
+/* Style pour le label */
+.btn-like {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: Black;
+  font-size: 22px;
+}
+
+.filled-heart {
+  display: none;
+  background: $button-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Lorsque la checkbox est cochée, montrer l'icône de cœur plein pour la première carte */
+#heart1:checked + .btn-like .filled-heart {
+  display: inline;
+}
+
+/* Cacher l'icône de cœur vide lorsqu'une checkbox est cochée pour la première carte */
+#heart1:checked + .btn-like .empty-heart {
+  display: none;
+}
+
+/* Répéter les mêmes règles en changeant les identifiants pour chaque carte */
+#heart2:checked + .btn-like .filled-heart {
+  display: inline;
+}
+
+#heart2:checked + .btn-like .empty-heart {
+  display: none;
+}
+
+#heart3:checked + .btn-like .filled-heart {
+  display: inline;
+}
+
+#heart3:checked + .btn-like .empty-heart {
+  display: none;
+}
+
+#heart4:checked + .btn-like .filled-heart {
+  display: inline;
+}
+
+#heart4:checked + .btn-like .empty-heart {
+  display: none;
+}
+

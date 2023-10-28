@@ -6,10 +6,7 @@
     background-color: #F6F6F6;
 }
 
-.cartes h2 {
-    text-align: left;
-    margin-left: 20px;
-}
+
 
 .cartes__list {
     display: flex;
@@ -56,17 +53,3 @@
     font-size: 14px;
     color: #008766;
 }
-
-.btn-like {
-    background-color: white;
-    color: black;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 20px;
-    position: absolute;
-    bottom: 20px;
-    right: 15px; 
-}
-

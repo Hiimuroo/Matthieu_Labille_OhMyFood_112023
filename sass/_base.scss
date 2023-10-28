@@ -18,6 +18,20 @@ a {
     color: #fff;
 }
 
+h2 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: $footer-color;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
 .contenu {
     display: flex;
     flex-direction: column;

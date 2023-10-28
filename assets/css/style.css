@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto", normal;
   margin: 0;
@@ -7,6 +8,20 @@ body {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+h2 {
+  text-align: left;
+  margin-left: 20px;
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .contenu {
@@ -19,32 +34,24 @@ a {
   padding: 20px;
 }
 
-footer {
-  background-color: #353535;
-  color: #fff;
-  padding: 20px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-}
-
 .footer li {
   list-style: none;
-  margin-left: 10px;
-  padding: 8px;
+  margin-left: 5px;
+  padding: 5px;
 }
 
 .footer_titre {
   font-size: 20px;
   font-family: "Shrikhand", normal;
   margin-left: 10px;
+  font-weight: normal;
 }
 
 .footer_liste {
   display: flex;
   flex-direction: column;
   align-items: left;
+  padding: 0;
 }
 
 .header {
@@ -75,19 +82,15 @@ footer {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: center;
-}
-
-.tutoriel h2 {
-  text-align: left;
-  margin-left: 20px;
 }
 
 .tutoriel_list {
   list-style: none;
   padding: 0;
   margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tutoriel_list_item {
@@ -159,11 +162,6 @@ footer {
   background-color: #F6F6F6;
 }
 
-.cartes h2 {
-  text-align: left;
-  margin-left: 20px;
-}
-
 .cartes__list {
   display: flex;
   flex-direction: column;
@@ -210,19 +208,6 @@ footer {
   color: #008766;
 }
 
-.btn-like {
-  background-color: white;
-  color: black;
-  border: none;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 20px;
-  position: absolute;
-  bottom: 20px;
-  right: 15px;
-}
-
 .btn {
   display: inline-block;
   background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
@@ -238,6 +223,63 @@ footer {
   border-radius: 25px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* Cacher la checkbox */
+.like-checkbox {
+  display: none;
+}
+
+/* Style pour le label */
+.btn-like {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: Black;
+  font-size: 22px;
+}
+
+.filled-heart {
+  display: none;
+  background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Lorsque la checkbox est cochée, montrer l'icône de cœur plein pour la première carte */
+#heart1:checked + .btn-like .filled-heart {
+  display: inline;
+}
+
+/* Cacher l'icône de cœur vide lorsqu'une checkbox est cochée pour la première carte */
+#heart1:checked + .btn-like .empty-heart {
+  display: none;
+}
+
+/* Répéter les mêmes règles en changeant les identifiants pour chaque carte */
+#heart2:checked + .btn-like .filled-heart {
+  display: inline;
+}
+
+#heart2:checked + .btn-like .empty-heart {
+  display: none;
+}
+
+#heart3:checked + .btn-like .filled-heart {
+  display: inline;
+}
+
+#heart3:checked + .btn-like .empty-heart {
+  display: none;
+}
+
+#heart4:checked + .btn-like .filled-heart {
+  display: inline;
+}
+
+#heart4:checked + .btn-like .empty-heart {
+  display: none;
 }
 
 .homepage_menu {
