@@ -77,6 +77,10 @@ footer {
   outline: none;
 }
 
+.header i {
+  color: black; /* Changer la couleur en fonction de votre mise en page */
+}
+
 .tutoriel {
   margin-top: 30px;
   display: flex;
@@ -154,8 +158,8 @@ footer {
 }
 
 .cartes {
-  margin-top: 10px;
-  padding-top: 20px;
+  margin-top: 20px;
+  padding-top: 30px;
   padding-bottom: 20px;
   text-align: center;
   background-color: #F6F6F6;
@@ -177,11 +181,13 @@ footer {
 }
 
 .card__body {
-  padding: 5px 10px;
   display: flex;
-  flex-direction: column;
   text-align: left;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-right: 30px;
+  padding-top: 10px;
 }
 
 .card__title {
@@ -207,6 +213,11 @@ footer {
   color: #008766;
 }
 
+.menu__btn, .card__btn {
+  margin-right: 15px;
+  padding-bottom: 10px;
+}
+
 .btn {
   display: inline-block;
   background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
@@ -224,56 +235,43 @@ footer {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
+.like-checkbox__input {
+  display: none;
+}
+
 .like-checkbox {
-  display: none;
+  position: relative;
 }
 
-.btn-like {
+.menu__like {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
-  cursor: pointer;
-  color: Black;
-  font-size: 22px;
+  top: 0;
+  left: 0;
+  font-size: 2em;
+  transition: opacity 0.5s;
 }
 
-.filled-heart {
-  display: none;
+.menu__like--noBg {
+  z-index: 2;
+}
+
+.menu__like--bg {
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: transparent;
+}
+
+.like-checkbox__input:checked + .like-checkbox .menu__like--noBg {
+  opacity: 0;
+}
+
+.like-checkbox__input:checked + .like-checkbox .menu__like--bg {
+  opacity: 1;
+  color: transparent;
   background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#heart1:checked + .btn-like .filled-heart {
-  display: inline;
-}
-
-#heart1:checked + .btn-like .empty-heart {
-  display: none;
-}
-
-#heart2:checked + .btn-like .filled-heart {
-  display: inline;
-}
-
-#heart2:checked + .btn-like .empty-heart {
-  display: none;
-}
-
-#heart3:checked + .btn-like .filled-heart {
-  display: inline;
-}
-
-#heart3:checked + .btn-like .empty-heart {
-  display: none;
-}
-
-#heart4:checked + .btn-like .filled-heart {
-  display: inline;
-}
-
-#heart4:checked + .btn-like .empty-heart {
-  display: none;
+  background-clip: text;
 }
 
 .homepage_menu {

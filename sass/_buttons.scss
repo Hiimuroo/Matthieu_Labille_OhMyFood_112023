@@ -16,56 +16,43 @@
   }
 }
 
+
+.like-checkbox__input {
+  display: none;
+}
+
+
 .like-checkbox {
-  display: none;
+  position: relative;
 }
 
-
-.btn-like {
+.menu__like {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
-  cursor: pointer;
-  color: Black;
-  font-size: 22px;
+  top: 0;
+  left: 0;
+  font-size: 2em;
+  transition: opacity 0.5s;
 }
 
-.filled-heart {
-  display: none;
-  background: $button-gradient;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.menu__like--noBg {
+  z-index: 2;
 }
 
-#heart1:checked + .btn-like .filled-heart {
-  display: inline;
+.menu__like--bg {
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: transparent;
 }
 
-#heart1:checked + .btn-like .empty-heart {
-  display: none;
+.like-checkbox__input:checked + .like-checkbox .menu__like--noBg {
+  opacity: 0;
 }
 
-#heart2:checked + .btn-like .filled-heart {
-  display: inline;
+.like-checkbox__input:checked + .like-checkbox .menu__like--bg {
+  opacity: 1;
+  color: transparent;
+  background: linear-gradient(193deg, #FF79DA -11.44%, #9356DC 123.93%);
+  -webkit-background-clip: text; 
+  background-clip: text;
 }
-
-#heart2:checked + .btn-like .empty-heart {
-  display: none;
-}
-
-#heart3:checked + .btn-like .filled-heart {
-  display: inline;
-}
-
-#heart3:checked + .btn-like .empty-heart {
-  display: none;
-}
-
-#heart4:checked + .btn-like .filled-heart {
-  display: inline;
-}
-
-#heart4:checked + .btn-like .empty-heart {
-  display: none;
-}
-

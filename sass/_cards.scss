@@ -1,11 +1,10 @@
 .cartes {
-    margin-top: 10px;
-    padding-top: 20px;
+    margin-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
     text-align: center;
     background-color: #F6F6F6;
 }
-
 
 
 .cartes__list {
@@ -24,11 +23,13 @@
 }
 
 .card__body {
-    padding: 5px 10px; 
     display: flex;
-    flex-direction: column;
     text-align: left;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 30px;
+    padding-top: 10px;
 }
 
 .card__title {
@@ -52,4 +53,9 @@
     right: 10px; 
     font-size: 14px;
     color: #008766;
+}
+
+.menu__btn, .card__btn {
+    margin-right: 15px;
+    padding-bottom: 10px;
 }
