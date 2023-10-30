@@ -16,6 +16,9 @@
   }
 }
 
+.space {
+  padding: 16px 50px;
+}
 
 .like-checkbox__input {
   display: none;
@@ -30,7 +33,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 2em;
+  font-size: 25px;
   transition: opacity 0.5s;
 }
 
