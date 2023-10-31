@@ -11,7 +11,7 @@
 .menu-container {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
-  padding: 20px;
+  padding: 15px;
   margin-top: -57px;
   position: relative;
   z-index: 1;
@@ -19,13 +19,8 @@
 
 .menu-content {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-}
-
-.menu-title {
-  position: relative;
-  left: -50px;
 }
 
 .menu-container.page-secondaire .heart-icon {
@@ -84,3 +79,40 @@
   margin-right: 5px;
 }
 
+.menu-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.menu-item i {
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  width: 50px;
+  height: 100%;
+  background-color: $Tertiaire-color;
+  transition: transform 0.5s ease;
+  transform: translateX(100%); 
+  top: 0;
+  left: 100%;
+  text-align: center;
+  line-height: 70px; 
+  color: white;
+  opacity: 0;
+}
+
+.menu-item:hover i {
+  transform: translateX(-100%);
+  opacity: 1;
+}
+
+.menu-item .price {
+  transform: translateX(0); 
+  transition: transform 0.5s ease;
+}
+
+.menu-item:hover .price {
+  transform: translateX(-45px); 
+}
