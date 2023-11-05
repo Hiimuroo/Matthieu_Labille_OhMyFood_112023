@@ -13,6 +13,11 @@ body {
     padding: 0;
 }
 
+h1 {
+    font-family: $font-logo;
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -21,6 +26,12 @@ a {
 h2 {
     text-align: left;
     margin-left: 20px;
+}
+
+.tutoriel_list_item h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight : 500;
 }
 
 .homepage_menu h2 {
