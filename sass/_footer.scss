@@ -21,3 +21,21 @@
 .footer_liste_item i {
   margin-right: 10px;
 }
+
+
+@media screen and (min-width: 1025px) {
+
+
+  .footer {
+    flex-direction: row-reverse;
+  }
+
+  .footer_liste {
+    flex-direction: row;
+  }
+
+  .footer li {
+    margin-left: 30px;
+  }
+
+}

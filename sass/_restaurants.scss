@@ -141,3 +141,26 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+@media screen and (min-width: 1025px) {
+
+  .menu-background-img img {
+    max-height: 400px;
+  }
+
+  .menu-content {
+    justify-content: center;
+  }
+
+.menu-container {
+  margin: -50px auto;
+  width: 70%;
+  margin-bottom: 0px;
+}
+
+.menu {
+  width: 70%;
+  margin: auto;
+}
+
+}

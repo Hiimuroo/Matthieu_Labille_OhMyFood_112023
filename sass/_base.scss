@@ -16,6 +16,7 @@ body {
 h1 {
     font-family: $font-logo;
     margin: 0;
+    font-weight: 400;
 }
 
 a {
@@ -32,6 +33,10 @@ h2 {
     margin: 0;
     font-size: 16px;
     font-weight : 500;
+}
+
+.restaurant_address span {
+    font-style: normal;
 }
 
 .homepage_menu h2 {

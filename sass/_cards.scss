@@ -59,3 +59,24 @@
     margin-right: 15px;
     padding-bottom: 10px;
 }
+
+@media screen and (min-width: 1025px) {
+    .cartes__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .card {
+      width: calc(50% - 40px);
+      margin: 10px 0;
+    }
+
+    .cartes {
+        padding : 20px 50px;
+    }
+
+    .cartes h2 {
+        margin-left: 0px;
+    }
+  }

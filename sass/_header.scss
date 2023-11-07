@@ -42,3 +42,10 @@
 .no-outline {
   outline: none;
 }
+
+@media screen and (min-width: 1025px) {
+
+  .index-header h1 {
+    padding: 10px;
+  }
+}
