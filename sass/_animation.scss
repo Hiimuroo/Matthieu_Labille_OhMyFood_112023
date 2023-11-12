@@ -45,3 +45,61 @@
   .menu-box:nth-of-type(3) {
     animation-delay: 1s;
   }
+
+
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  animation: hideLoader 5s forwards;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid $primary-color;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite; 
+}
+
+.content.hidden {
+  display: none;
+}
+
+@keyframes hideLoader {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.content.hidden {
+  animation: showContent 0s linear 2s forwards;
+}
+
+@keyframes showContent {
+  from {
+    display: none;
+  }
+  to {
+    display: block;
+  }
+}
