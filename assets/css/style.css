@@ -76,7 +76,6 @@ footer {
 .footer_liste {
   display: flex;
   flex-direction: column;
-  align-items: left;
   padding: 0;
 }
 
@@ -206,7 +205,7 @@ footer {
   display: inline-block;
   background-color: #F6F6F6;
   color: #000;
-  padding: 25px 25px;
+  padding: 30px 30px;
   margin: 15px;
   width: 60%;
   border-radius: 15px;
@@ -525,7 +524,6 @@ footer {
 .menu-item .menu-details h3,
 .menu-item .menu-details p {
   max-width: 100%;
-  white-space: hidden;
   overflow: hidden;
   text-overflow: ellipsis;
 }
